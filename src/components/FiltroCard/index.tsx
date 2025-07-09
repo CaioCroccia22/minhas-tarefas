@@ -44,10 +44,10 @@ const FiltroCard = ({ legenda, criterio, valor }: Props) => {
     )
   }
 
-  const ativo = verificaEstaAtivo()
+  const estaAtivo = verificaEstaAtivo()
 
   return (
-    <S.Card ativo={ativo} onClick={filtrar}>
+    <S.Card ativo={estaAtivo} onClick={filtrar}>
       <S.Contador>{contaTarefa()}</S.Contador>
       <S.Label>{legenda}</S.Label>
     </S.Card>

@@ -1,11 +1,12 @@
 import { Link } from 'react-router-dom'
 import styled from 'styled-components'
+import variavel from '../../styles/variavel'
 
 export const Circulo = styled(Link)`
   display: block;
   height: 64px;
   width: 64px;
-  background-color: #44bd32;
+  background-color: ${variavel.verde}
   color: #fff;
   position: fixed;
   bottom: 40px;
